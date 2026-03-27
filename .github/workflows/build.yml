@@ -19,6 +19,7 @@ jobs:
     - name: Build
       run: |
         cd CeviriApp
+        sed -i 's/7.3.1/7.4.2/g' gradle/wrapper/gradle-wrapper.properties
         chmod +x gradlew
         ./gradlew assembleDebug
     - name: Upload APK
