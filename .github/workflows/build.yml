@@ -18,7 +18,7 @@ jobs:
         cache: gradle
     - name: Build
       run: |
-        cd CeviriAopp
+        cd CeviriApp
         chmod +x gradlew
         ./gradlew assembleDebug
     - name: Upload APK
