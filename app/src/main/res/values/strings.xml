@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">English App</string>
+    <string name="start_translation">Çeviri Sayfasına Git</string>
+    <string name="start_quiz">Quiz Oyununa Git</string>
+    <string name="translate_title">İngilizce - Türkçe</string>
+    <string name="quiz_title">Kelime Oyunu</string>
+    <string name="correct">Doğru!</string>
+    <string name="wrong">Yanlış!</string>
+
+
+
+   
+    <string-array name="quiz_questions">
+        <item>I [___] a cat</item> <item>have</item> <item>am</item> <item>eat</item>
+        <item>The [___] is blue</item> <item>sky</item> <item>dog</item> <item>apple</item>
+        <item>I [___] coffee</item> <item>drink</item> <item>walk</item> <item>run</item>
+        <item>She [___] happy</item> <item>are</item> <item>is</item> <item>was</item>
+    </string-array>
+</resources>

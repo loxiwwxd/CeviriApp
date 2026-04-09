@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Başlık Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E65100"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelime Oyunu"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Skor ve İlerleme -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Skor: 0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#E65100"/>
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Soru: 1/20"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#424242"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <!-- ProgressBar (ilerleme çubuğu) -->
+        <ProgressBar
+            android:id="@+id/progressBarQuiz"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#E65100"
+            android:progressBackgroundTint="#FFCCBC"/>
+
+        <!-- Soru Kartı -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_margin="16dp"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:text="Soru yükleniyor..."/>
+
+            <!-- Türkçe Anlamı -->
+            <TextView
+                android:id="@+id/tvTurkishMeaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#757575"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <!-- Seçenek Butonları -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/btnOption1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="Seçenek 1"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnOption2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="Seçenek 2"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnOption3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="Seçenek 3"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnOption4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="Seçenek 4"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Sonraki Soru Butonu -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Sonraki Soru →"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
